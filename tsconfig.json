@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
-		"declaration": false,
+		"declaration": true,
+		"declarationDir": "dist/",
 		"lib": ["es6", "dom"],
 		"target": "es5",
 		"outDir": "dist/",
