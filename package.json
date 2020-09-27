@@ -15,7 +15,8 @@
 		"Benedict Etzel <benedict@hearthsim.net>"
 	],
 	"main": "dist/sunwell.node.js",
-	"types": "./dist/Sunwell.d.ts",
+	"browser": "dist/sunwell.web.js",
+	"types": "./dist/web/Sunwell.d.ts",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/HearthSim/Sunwell.git"
@@ -52,7 +53,7 @@
 		"argparse": "^2.0.1",
 		"canvas": "^2.6.1",
 		"chars": "^2.3.0",
-		"linebreak": "^1.0.2",
+		"linebreak-ts": "^1.0.2",
 		"mkdirp": "^1.0.4",
 		"promise": "^8.1.0"
 	},
