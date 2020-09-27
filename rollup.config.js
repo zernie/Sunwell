@@ -27,7 +27,17 @@ export default {
 			},
 			extensions: [".js", ".ts"],
 		}),
-		typescript({module: "CommonJS"}),
+		typescript({
+			module: "CommonJS",
+			tsconfigOverride: {
+				compilerOptions: {
+					declaration: true,
+					declarationDir: `dist/${PLATFORM}`,
+				},
+			},
+			clean: true,
+			useTsconfigDeclarationDir: true,
+		}),
 		resolve(),
 		commonjs({
 			exclude: ExternalModulesList,
